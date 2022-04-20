@@ -1,0 +1,26 @@
+env: DEV
+
+spring:
+  datasource:
+    username: ${${env}.username}
+    password: ${${env}.password}
+    url: ${${env}.url}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+  #外部文件配置
+  mvc:
+    static-path-pattern: /resource/**
+  resources:
+    static-locations: file:${file-path}
+
+#静态资源配置
+file-path: ${${env}.file-path}
+
+hostUrl: ${${env}.hostUrl}
+
+static-path: ${${env}.static-path}
+
+swagger:
+  # 是否开启swagger
+  enabled: true

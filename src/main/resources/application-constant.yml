@@ -1,0 +1,7 @@
+DEV:
+  url: jdbc:mysql://rm-2ze412sz6bi7c0dqs8o.mysql.rds.aliyuncs.com:3306/wish?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+  username: xiangmuzhi666
+  password: xiangmuzhi666+
+  hostUrl: 服务器地址
+  file-path: /usr/local/demores/
+  static-path: /resource/

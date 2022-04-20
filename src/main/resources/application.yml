@@ -1,0 +1,16 @@
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
+
+spring:
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+  profiles:
+    active: dev
+    include: constant
+  servlet:
+    multipart:
+      max-file-size: 400MB
+      max-request-size: 400MB
+
